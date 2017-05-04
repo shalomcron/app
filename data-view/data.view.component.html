@@ -1,0 +1,3 @@
+<b *ngIf="session.name; else noSessionFoundBlock">Wellcome {{session.name}}</b>
+
+<ng-template #noSessionFoundBlock> noSessionFoundBlock !!!</ng-template>

@@ -1,0 +1,15 @@
+<form>
+  <h1 class="err-msg">{{errMessage}}</h1>
+  <label for="useName"> useName : </label>
+  <input required type="text" id="useName" name="userName" [(ngModel)]="userName" placeholder="{{placeholder}}"
+  minlength="4" maxlength="10" #name="ngModel">
+
+  <div *ngIf="name.errors">ERR MSSGG</div>
+
+  <br>
+  Your User Name Is: {{userName}}
+
+  <br>
+  <button (click)="logIn()">Log-In</button>
+  <!--<button>submittt</button>-->
+</form>
